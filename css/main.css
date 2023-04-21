@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  background-color: #3b49df;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+
+a:active,
+a:hover {
+  background-color: #192494;
+}
+
+span {
+  color: white;
+  font-size: small;
+  background-color: #3b49df;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+
+.stars {
+  background-color: #23a96e;
+}
+
+.lang {
+  background-color: #fc5926;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 15px auto;
+  text-align: center;
+  color: #3b49df;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #3b49df;
+}
+
+form {
+  margin: 10px auto;
+  padding: 20px;
+  width: 550px;
+  text-align: center;
+  border: 1px solid #adb2df;
+  border-radius: 15px;
+}
+
+input {
+  display: block;
+  margin: 30px auto;
+  padding: 15px;
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid #acacac;
+  font-size: 20px;
+  color: #3b49df;
+}
+
+input:hover,
+select:hover {
+  outline: none;
+  border: 1px solid #3b49df;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  background-color: #3b49df;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #3b49df;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+button:hover,
+button:active {
+  background-color: #333eb9;
+}
+
+#repos {
+  margin: 10px auto;
+  padding: 20px;
+  width: 750px;
+  border: 1px solid #adb2df;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.repo {
+  padding: 15px;
+  text-align: center;
+}
+
+.repo:not(:last-child) {
+  border-bottom: 1px solid #adb2df;
+}
+
+@media (max-width: 769px) {
+  .h1 {
+    width: 30px;
+  }
+  .h2 {
+    width: 20px;
+  }
+  form {
+    width: 360px;
+  }
+  button {
+    display: block;
+    margin: auto;
+  }
+  input {
+    width: 250px;
+  }
+  #repos {
+    width: 370px;
+  }
+}
